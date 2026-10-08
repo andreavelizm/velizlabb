@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FUENTES */
+body {
+    background-color: #efe6da;
+    color: #33271f;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: "Bodoni Moda", Georgia, serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.script {
+    font-family: "Pinyon Script", cursive;
+    font-size: 52px;
+    line-height: 1.2;
+    text-transform: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #1a1410;
+    color: #efe6da;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 14px 28px;
+}
+
+.btn:hover {
+    background-color: #33271f;
+}
+
+/* HEADER */
+header {
+    background-color: #cdbba8;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 40px;
+}
+
+.logo img {
+    width: auto;
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    gap: 32px;
+}
+
+nav a {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+nav a:hover,
+footer a:hover,
+.video a:hover {
+    text-decoration: underline;
+}
+
+/* PORTADA */
+.portada {
+    position: relative;
+    height: 600px;
+    background-color: #1a1410;
+    color: #fffaf3;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+.portada div {
+    position: relative;
+}
+
+.portada h1 {
+    font-size: 60px;
+}
+
+.portada p {
+    font-size: 12px;
+    margin-top: 14px;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    background-color: #cdbba8;
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.portfolio h2 {
+    margin-bottom: 40px;
+}
+
+.grilla {
+    display: flex;
+    gap: 22px;
+}
+
+.grilla article {
+    width: 33%;
+    height: 400px;
+}
+
+.portfolio p {
+    max-width: 600px;
+    margin: 48px auto 0;
+}
+
+/* ABOUT */
+.about {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    padding: 100px 8%;
+}
+
+.about div,
+.about img {
+    width: 50%;
+}
+
+.about img {
+    height: 350px;
+}
+
+.about .script {
+    display: block;
+    font-size: 36px;
+}
+
+.about h2 {
+    font-size: 30px;
+    margin: 8px 0 24px;
+}
+
+.about p {
+    margin-bottom: 16px;
+}
+
+.about .btn {
+    margin-top: 16px;
+}
+
+/* MAPA (marrón) */
+.mapa {
+    background-color: #5a4030;
+    padding: 80px 8%;
+}
+
+.mapa iframe {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: 420px;
+    margin: 0 auto;
+    border: 0;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+/* VIDEO (beige claro) */
+.video {
+    background-color: #f8f2e9;
+    padding: 80px 1rem;
+    text-align: center;
+}
+
+.video div {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video h2 {
+    margin-bottom: 1.5rem;
+}
+
+.video iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.video a {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1a1410;
+    color: #efe6da;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 70px 8%;
+}
+
+footer ul {
+    width: 33%;
+    font-family: "Bodoni Moda", Georgia, serif;
+    font-size: 26px;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+.footer-marca {
+    width: 67%;
+    background-color: #33271f;
+    padding: 48px 24px;
+    text-align: center;
+}
+
+.footer-logo {
+    font-family: "Bodoni Moda", Georgia, serif;
+    font-size: 40px;
+}
+
+.footer-marca p {
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+/* trucoo el media para el RESPONSIVE que se adapte */
+@media (max-width: 760px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo img {
+        height: 70px;
+    }
+
+    nav ul {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .portada {
+        height: 450px;
+    }
+
+    .portada h1 {
+        font-size: 36px;
+    }
+
+    .script {
+        font-size: 40px;
+    }
+
+    .grilla,
+    .about,
+    footer {
+        flex-direction: column;
+    }
+
+    .grilla article,
+    .about div,
+    .about img,
+    footer ul,
+    .footer-marca {
+        width: 100%;
+    }
+
+    .grilla article {
+        height: 250px;
+    }
+
+    .mapa,
+    .video {
+        padding: 50px 1rem;
+    }
+
+    .mapa iframe {
+        height: 300px;
+    }
+}
